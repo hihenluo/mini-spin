@@ -1,6 +1,15 @@
-export const COIN_CONTRACT_ADDRESS = '0xFcf71696D7126E1310C42BD4EBd7da4D8D69F696';
 
-export const CoinABI = [
+export const TOKEN_CONTRACTS = {
+  COIN: '0xFcf71696D7126E1310C42BD4EBd7da4D8D69F696',
+  GEM: '0x7Afeb18429803f0a69e3602E84eac2d09a8ac731',
+  TICKET: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+  STAR: '0x27D72D183fA6969cf65c363f8E36bC3C8F3b1D24',
+  HEART: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+  
+};
+
+
+export const GenericTokenABI = [
   {
     inputs: [
       { internalType: 'address', name: 'owner', type: 'address' },
