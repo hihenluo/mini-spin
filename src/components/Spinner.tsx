@@ -1,8 +1,8 @@
 import React from 'react';
-import * as Roulette from 'react-custom-roulette';
+import { Wheel } from 'react-custom-roulette'; 
 import type { Prize } from '../data/prizes';
 
-const Wheel = (Roulette as any).default.Wheel;
+
 
 interface SpinnerProps {
   mustSpin: boolean;
@@ -12,9 +12,7 @@ interface SpinnerProps {
 }
 
 const Spinner: React.FC<SpinnerProps> = ({ mustSpin, prizeNumber, data, onStopSpinning }) => {
-  if (!Wheel) {
-    return <div>Loading Wheel...</div>;
-  }
+  
   
   return (
     <Wheel
