@@ -49,7 +49,7 @@ async function generateTokenSignature(user: string, tokenAddress: string, amount
   const domain = {
     name: "TokenClaimer",
     version: "1",
-    chainId: 137, 
+    chainId: 42220, 
     verifyingContract: CLAIMER_CONTRACT_ADDRESS
   };
 
@@ -72,7 +72,7 @@ async function generateNFTSignature(recipient: string) {
     const domain = {
         name: "Wheel of Fun",
         version: "1",
-        chainId: 137,
+        chainId: 42220,
         verifyingContract: NFT_CONTRACT_ADDRESS
     };
 
